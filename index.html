@@ -19,13 +19,12 @@
 
   <div class="content-wrapper">
 
-    <header class="wrapper bg-soft-primary">
+    <header class="wrapper">
       <div class="alert bg-primary text-white alert-dismissible fade show rounded-0 mb-0 text-lg-center pb-5" role="alert">
         <div class="container">
           <div class="alert-inner p-0">
-            <span class="badge badge-lg bg-white text-primary text-uppercase rounded me-2">Update</span> Versi Terbaru dari Aplikasi Info BMKG <a href="#" class="alert-link link-white hover"> di Sini</a>!
+            <span class="badge badge-lg bg-white text-primary text-uppercase rounded me-2">Update</span> <span> Versi Terbaru dari Aplikasi Info BMKG <a href="#" class="alert-link link-white hover"> di Sini</a>!</span><img src="./assets/img/icons/x-lg.svg" class="tanda-silang" alt="" aria-label="Close" data-bs-dismiss="alert" style="margin-left: 5px;">
           </div>
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           <!-- /.alert-inner -->
         </div>
         <!-- /.container -->
@@ -48,9 +47,8 @@
     </header>
     <!-- /header -->
 
-    <section class="wrapper bg-soft-primary">
+    <section class="wrapper">
       <div class="container pt-5 pb-15 py-lg-17 py-xl-19 pb-xl-20 position-relative">
-        <img class="position-lg-absolute col-12 col-lg-10 col-xl-11 col-xxl-10 px-lg-5 px-xl-0 ms-lg-0 mb-md-4 mb-lg-0 img-first" src="./assets/img/info/banner.png" data-cue="fadeIn" alt="" style="top: -1%; left: -21%; width: 100%;" />
         <div class="row gx-0 align-items-center">
           <div class="col-md-10 offset-md-1 col-lg-5 offset-lg-7 offset-xxl-6 ps-xxl-12 mt-md-n9 text-center text-lg-start" data-cues="slideInDown" data-group="page-title" data-delay="600">
             <h1 class="display-2 mb-4 mx-sm-n2 mx-md-0">Aplikasi Info BMKG</h1>
@@ -221,11 +219,12 @@
     
     <section class="wrapper bg-light">
       <div class="container pt-10 pb-15 py-lg-17 py-xl-20 py-xxl-22 position-relative">
-        <img class="position-lg-absolute col-12 col-lg-12 mt-lg-n50p mb-3 mb-md-10 mb-lg-0" src="./assets/img/photos/devices2.png" srcset="./assets/img/photos/devices2@2x.png 2x" data-cue="fadeIn" alt="" style="top: 50%; left: -23%;" />
+        <figure class="figure-fitur"><img class="g20-gambar position-lg-absolute col-12 col-lg-10 col-xl-11 col-xxl-10 px-lg-5 px-xl-0 ms-lg-0 mb-md-4 mb-lg-0 img-first" src="./assets/img/info/banner.png" data-cue="fadeIn" alt="" style="top: -1%; left: -21%; width: 100%;" /></figure>
         <div class="row gx-lg-8 gx-xl-12 align-items-center">
           <div class="col-md-10 offset-md-1 col-lg-6 offset-lg-6 mt-md-n9 text-center text-lg-start" data-cues="slideInDown" data-group="download">
             <h1 class="display-4 mb-4 px-md-10 px-lg-0">Segera Unduh</h1>
             <p class="lead fs-lg mb-7 px-md-10 px-lg-0 pe-xxl-15">Aplikasi Info BMKG</p>
+            <p class="lead fs-lg mb-7 px-md-10 px-lg-0 pe-xxl-15" style="font-size: .8rem !important;">Untuk menunjang kegiatan KTT G-20 Aplikasi Info BMKG menghadirkan layanan informasi khusus antara lain prakiraan cuaca per jam untuk setiap venue kegiatan, informasi gempa bumi di sekitar venue G-20 lengkap dengan peta evakuasi, informasi cuaca penerbangan dan citra satelit untuk memperlancar mobilitas kegiatan. Informasi disajikan dengan dua bahasa, yaitu bahasa Indonesia dan bahasa Inggris.</p>
             <!-- <div class="d-flex justify-content-center justify-content-lg-start" data-cues="slideInDown" data-group="download">
               <span><a class="btn btn-primary btn-icon btn-icon-start rounded me-2"><i class="uil uil-apple"></i> App Store</a></span>
               <span><a class="btn btn-green btn-icon btn-icon-start rounded"><i class="uil uil-google-play"></i> Google Play</a></span>
@@ -240,12 +239,14 @@
     <!-- /section -->
   </div>
 
+  <div class="back-web"></div>
+
   <!-- /.content-wrapper -->
   <footer class="bg-light">
-    <div class="container py-13 py-md-15">
+    <div class="container pb-13 pt-5 py-md-15">
       <div class="row gy-6 gy-lg-0">
         <div class="col">
-          <div class="widget">
+          <div class="widget" style="margin: 10px;">
             <img class="mb-4" src="./assets/img/logo.png" style="width: 30px;" alt="" /> <span style="font-weight: bold; color: black;">BMKG</span>
             <p class="mb-4">© 2022 BMKG All rights reserved.</p>
             <!-- /.social -->
@@ -253,7 +254,7 @@
           <!-- /.widget -->
         </div>
         <!-- /column -->
-        <div class="col icon-medsos" style="display: flex; flex-direction: row; align-items: center;">
+        <div class="col icon-medsos" style="display: flex; flex-direction: row; align-items: center; position: relative; left: 10px; justify-content: space-around;">
             <a href="https://www.instagram.com/infoBMKG/"><img src="./assets/img/icons/instagram.svg" alt="" style="margin: 10px; width: 30px;"></a>
             <a href="https://twitter.com/infoBMKG"><img src="./assets/img/icons/twitter.svg" alt="" style="margin: 10px; width: 30px;"></a>
             <a href="https://www.facebook.com/InfoBMKG/"><img src="./assets/img/icons/facebook.svg" alt="" style="margin: 10px; width: 30px;"></a>
@@ -268,6 +269,7 @@
 
   <script src="./assets/js/plugins.js"></script>
   <script src="./assets/js/theme.js"></script>
+  
   <style>
     .img-android{
         width: 50%;
@@ -296,6 +298,10 @@
         .figure-fitur-genap{
             text-align: left;
         }
+        .g20-gambar{
+            width: 50% !important;
+            top: 8% !important;
+        }
     }
     @media only screen and (max-width: 770px) {
         .img-android{
@@ -310,14 +316,45 @@
         .judul-fitur{
             text-align:center;
         }
+        .judul-fitur-genap{
+            text-align:center;
+        }
         .info-fitur{
             text-align: center;
         }
         .icon-medsos{
             justify-content: flex-start;
+            margin-top: 5px !important;
         }
     }
+
+    .back-web{
+        background-color: black;
+        filter: progid: DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#003073', endColorstr='#029797');
+        background-image: url(//img.alicdn.com/tps/TB1d.u8MXXXXXXuXFXXXXXXXXXX-1900-790.jpg);
+        background-size: 100%;
+        background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0, #003073), color-stop(100%, #029797));
+        background-image: -webkit-linear-gradient(135deg, #003073, #029797);
+        background-image: -moz-linear-gradient(45deg, #003073, #029797);
+        background-image: -ms-linear-gradient(45deg, #003073 0, #029797 100%);
+        background-image: -o-linear-gradient(45deg, #003073, #029797);
+        background-image: linear-gradient(135deg, #003073, #029797);
+        text-align: center;
+        margin: 0px;
+        overflow: hidden;
+    }
+
+    canvas{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100vh;
+        height:100vh;
+        z-index:-1;
+    }
+
   </style>
+  <script src="index.js"></script>
 </body>
 
 </html>
